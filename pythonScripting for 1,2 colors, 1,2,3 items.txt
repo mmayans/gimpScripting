@@ -1,0 +1,21 @@
+list1 = [" red: ", " blue: ", " green: ", " yellow: " ]
+import copy
+font = "Arial"
+size = 32
+realcolor = (0,0,0)
+for color in list1:
+     string1 = color
+     for i in range(3):
+         pdb.python_fu_hello_world(string1 + str(i + 1), font, size, realcolor)
+         list2 = copy.deepcopy(list1)
+         try:
+             list2.remove(color)
+         except Exception as e:
+              list2 = list
+	 try:
+             for color2 in list2:
+                 for j in range(3):
+                      pdb.python_fu_hello_world(string1 + str(i + 1) + " " + color2 + str(j + 1), font, size, realcolor)
+                 
+	 except exception as e:
+		list2 = list2
